@@ -46,7 +46,10 @@ a {
   vertical-align:baseline;
   background:transparent;
   text-decoration: none;
-  color: #75c236;
+  color: #000000;
+}
+a:hover {
+  color: #ff6e6e;
 }
 ins {
   background-color:#ff9;
@@ -99,13 +102,59 @@ input, button, textarea, select {
 
 /*-----スマホ縦-------------------------*/
 .body {
-  background-color: #ffffff;
+  background-color: #fafafa;
   /* background-color: #F2F2F2; */
   height: 100%;
   min-width: 320px;
   min-height: 100vh;
   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
 }
+/*-----ヘッダー-------------------------*/
+.header {
+  width: 100%;
+  height: 50px;
+  min-width: 320px;
+  /* background-color: #424242; */
+  background-color: #fafafa;
+  border-bottom: solid 1px #EBEBEB;
+  /* position: fixed; */
+  top: 0px;
+  z-index: 2;
+}
+.headerwrap {
+  max-width: 800px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+/* .logo {
+  display: block;
+  height: 50px;
+  margin-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.logosvg {
+  /* box-sizing: border-box; */
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.header_menus {
+  list-style: none;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+.header_menu {
+  font-size: 16px;
+  line-height: 50px;
+  color: #000000;
+  margin-left: 10px;
+}
+
 /*-----メイン-------------------------*/
 .main {
   box-sizing: border-box;
@@ -158,7 +207,7 @@ input, button, textarea, select {
   margin: 0px 0px 60px 10px;
 }
 .item_title {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 /*-----文字装飾(記事)-------------------------*/
