@@ -102,12 +102,40 @@ input, button, textarea, select {
 
 /*-----スマホ縦-------------------------*/
 .body {
-  background-color: #fafafa;
+  background-color: #ececec;
   /* background-color: #F2F2F2; */
   height: 100%;
   min-width: 320px;
   min-height: 100vh;
   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+}
+/*-----トップ-------------------------*/
+.top {
+	background-color: #FFFFFF;
+  background-image: url("../img/top_image2.png");
+  /* background-image: url("../img/susi.gif"); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 200px;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 50px;
+  position: relative;
+}
+.logotop{
+	width: 220px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.catchcopy{
+  color: #424242;
+	margin-top: 10px;
+  font-size: 16px;
 }
 /*-----ヘッダー-------------------------*/
 .header {
@@ -115,8 +143,8 @@ input, button, textarea, select {
   height: 50px;
   min-width: 320px;
   /* background-color: #424242; */
-  background-color: #fafafa;
-  border-bottom: solid 1px #EBEBEB;
+  background-color: #ffffff;
+  /* border-bottom: solid 1px #000000; */
   /* position: fixed; */
   top: 0px;
   z-index: 2;
@@ -165,14 +193,24 @@ input, button, textarea, select {
   margin: 50px auto 50px auto;
   overflow: hidden;
 }
+.main_top {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  max-width: 1024px;
+  margin: 0px auto 50px auto;
+  overflow: hidden;
+}
 .container {
   box-sizing: border-box;
   /* background-color: #FFFFFF; */
   width: 100%;
   height: 100%;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px 40px 10px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 50px;
 }
 .article {
   max-width: 550px;
@@ -197,7 +235,7 @@ input, button, textarea, select {
   float: left;
   padding-left: 5px;
   padding-right: 5px;
-  width: 50%;
+  width: 100%;
 }
 
 .site_title {
@@ -206,8 +244,43 @@ input, button, textarea, select {
 .profile {
   margin: 0px 0px 60px 10px;
 }
+.item_title_wrap {
+  height: 40px;
+}
 .item_title {
   margin-left: 10px;
+}
+
+.view_more_wrap {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+.view_more {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.service_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.works_title_wrap {
+  margin-left: 10px;
+}
+.works_title {
+  margin: 0px 0px 0px 0px;
+}
+.works_description{
+  font-size: 18px;
 }
 
 /*-----文字装飾(記事)-------------------------*/
@@ -230,8 +303,7 @@ h3 {
   font-size: 16px;
   line-height: 27px;
   font-weight: bold;
-  color: #707070;
-  margin-top: 30px;
+  color: #121212;
   margin-bottom: 20px;
   padding: 5px;
 }
@@ -252,7 +324,7 @@ p {
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
-  color: #707070;
+  color: #121212;
 }
 .p {
   margin-bottom: 15px;
@@ -301,10 +373,7 @@ p {
 .logo {
   height: 30px;
 }
-.products {
-  font-size: 20px;
-  font-weight: normal;
-}
+
 
 
 /*-----記事一覧------------------------------*/
@@ -356,11 +425,19 @@ th {
     float: left;
     padding-left: 10px;
     padding-right: 10px;
-    width: 33%;
+    width: 50%;
   }
 
 
 }
 /*-----デスクトップPCとタブレット横------------------------------*/
 @media (min-width: 769px){
+  .threecolumn {
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33%;
+  }
 }
