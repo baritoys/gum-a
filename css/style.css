@@ -112,8 +112,8 @@ input, button, textarea, select {
 /*-----トップ-------------------------*/
 .top {
 	background-color: #FFFFFF;
-  background-image: url("../img/top_image2.png");
-  /* background-image: url("../img/susi.gif"); */
+  /* background-image: url("../img/top_image2.png"); */
+  background-image: url("../img/gum-a4.gif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size:cover;
