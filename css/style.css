@@ -100,7 +100,7 @@ input, button, textarea, select {
   appearance: none;
 }
 
-/*-----スマホ縦-------------------------*/
+/*-----枠-------------------------*/
 .body {
   background-color: #ececec;
   /* background-color: #F2F2F2; */
@@ -108,6 +108,53 @@ input, button, textarea, select {
   min-width: 320px;
   min-height: 100vh;
   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+}
+.main {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  max-width: 800px;
+  margin: 30px auto 50px auto;
+  overflow: hidden;
+}
+.main_top {
+  max-width: 1024px;
+  margin: 0px auto 50px auto;
+}
+.container {
+  box-sizing: border-box;
+  /* background-color: #FFFFFF; */
+  width: 100%;
+  height: 100%;
+  padding: 0px 10px 40px 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+}
+.article {
+  max-width: 550px;
+  /* max-width: 600px; */
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+.twocolumn {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  margin-bottom: 40px;
+  /* text-align: center; */
+}
+.threecolumn {
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
 }
 /*-----トップ-------------------------*/
 .top {
@@ -145,7 +192,7 @@ input, button, textarea, select {
 }
 .catchcopy{
   color: #424242;
-	margin-top: 10px;
+  margin-top: 10px;
   font-size: 16px;
 }
 /*-----ヘッダー-------------------------*/
@@ -153,10 +200,7 @@ input, button, textarea, select {
   width: 100%;
   height: 50px;
   min-width: 320px;
-  /* background-color: #424242; */
   background-color: #ffffff;
-  /* border-bottom: solid 1px #000000; */
-  /* position: fixed; */
   top: 0px;
   z-index: 2;
 }
@@ -167,15 +211,7 @@ input, button, textarea, select {
   margin-right: auto;
   position: relative;
 }
-/* .logo {
-  display: block;
-  height: 50px;
-  margin-left: 10px;
-  margin-left: auto;
-  margin-right: auto;
-} */
 .logosvg {
-  /* box-sizing: border-box; */
   height: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -193,67 +229,47 @@ input, button, textarea, select {
   color: #000000;
   margin-left: 10px;
 }
-
-/*-----メイン-------------------------*/
-.main {
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  min-width: 320px;
-  max-width: 800px;
-  margin: 50px auto 50px auto;
-  overflow: hidden;
-}
-.main_top {
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  min-width: 320px;
-  max-width: 1024px;
-  margin: 0px auto 50px auto;
-  overflow: hidden;
-}
-.container {
-  box-sizing: border-box;
-  /* background-color: #FFFFFF; */
-  width: 100%;
-  height: 100%;
-  padding: 0px 10px 40px 10px;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 50px;
-}
-.article {
-  max-width: 550px;
-  /* max-width: 600px; */
-  margin-right: auto;
-  margin-left: auto;
-  overflow: hidden;
-}
-
-.twocolumn {
-  position: relative;
-  display: inline-block;
-  box-sizing: border-box;
-  float: left;
-  width: 100%;
-  margin-bottom: 40px;
-  /* text-align: center; */
-}
-.threecolumn {
-  display: inline-block;
-  box-sizing: border-box;
-  float: left;
-  padding-left: 5px;
-  padding-right: 5px;
-  width: 100%;
-}
-
+/*-----個別ページ-------------------------*/
 .site_title {
   margin: 0px 0px 20px 10px;
 }
-.profile {
-  margin: 0px 0px 60px 10px;
+.page_title {
+  color: #121212;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 0px 10px 0px 10px;
+}
+.page_description{
+  color: #121212;
+  margin: 0px 10px 20px 10px;
+  font-size: 14px;
+}
+/*-----コンタクト-------------------------*/
+.contact_wrap {
+  margin: 0px 10px 30px 10px;
+}
+.contact_title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.mail_address {
+  font-size: 25px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ff6e6e;
+}
+.strong {
+  font-weight: bold;
+}
+.contact_description {
+  margin-top: 10px;
+}
+/*-----アイテムリスト-------------------------*/
+.service_title {
+  font-size: 20px;
+  font-weight: bold;
 }
 .item_title_wrap {
   height: 40px;
@@ -261,7 +277,6 @@ input, button, textarea, select {
 .item_title {
   margin-left: 10px;
 }
-
 .view_more_wrap {
   position: absolute;
   bottom: 0px;
@@ -276,23 +291,10 @@ input, button, textarea, select {
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
-.service_title {
-  font-size: 20px;
-  font-weight: bold;
-}
-.works_title_wrap {
-  margin-left: 10px;
-}
-.works_title {
-  margin: 0px 0px 0px 0px;
-}
-.works_description{
-  font-size: 18px;
-}
+
+
 
 /*-----文字装飾(記事)-------------------------*/
 h1 {
@@ -389,15 +391,68 @@ p {
 
 /*-----記事一覧------------------------------*/
 
+
 /*-----フッター-------------------------*/
+.footer_logo_wrap {
+	background-color: #FFFFFF;
+  /* background-image: url("../img/top_image2.png"); */
+  background-image: url("../img/gum-a5.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 180px;
+	text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.logotop{
+	width: 220px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
 .footer {
-  display: none;
   text-align: center;
+  background-image: url("../img/gum-a5.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
   min-width: 320px;
   padding-bottom: 10px;
   padding-top: 10px;
-  /* background-color: #ffffff;
-  border-top: solid 1px #EBEBEB; */
+}
+.footerlinks {
+  box-sizing: border-box;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 320px;
+  max-width: 800px;
+}
+.footerlink {
+  text-decoration: none;
+  display: inline-block;
+  color: #121212;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  margin-right: 10px;
+}
+.footerlogosvg {
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.allrights {
+  font-size: 13px;
+  color: #121212;
+  margin-bottom: 0px;
 }
 
 
