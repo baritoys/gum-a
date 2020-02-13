@@ -245,6 +245,18 @@ input, button, textarea, select {
   margin: 0px 10px 20px 10px;
   font-size: 14px;
 }
+.page_h3 {
+  max-width: 500px;
+  margin: 20px auto 0px auto;
+  padding: 0px 10px 0px 10px;
+}
+.description {
+  max-width: 500px;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 20px auto 40px auto;
+  padding: 0px 10px 0px 10px;
+}
 /*-----コンタクト-------------------------*/
 .contact_wrap {
   margin: 0px 10px 30px 10px;
@@ -266,6 +278,60 @@ input, button, textarea, select {
 .contact_description {
   margin-top: 10px;
 }
+/*-----about-------------------------*/
+
+/*-----メンバー-------------------------*/
+.profile_img {
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.member_wrap {
+  margin: 0px 10px 30px 10px;
+}
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.position {
+  font-size: 14px;
+  color: #ff6e6e;
+  margin-bottom: 10px;
+}
+.bio {
+  margin-bottom: 10px;
+}
+.skill {
+  margin-bottom: 15px;
+}
+.sns_wrap {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.sns_logo {
+  display: block;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.link {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  line-height: 21px;
+  text-decoration: none;
+  color: #121212;
+}
+.link:hover {
+  color: #424242;
+  transition: all .3s;
+  box-shadow: none;
+}
+
 /*-----アイテムリスト-------------------------*/
 .service_title {
   font-size: 20px;
@@ -342,37 +408,7 @@ p {
 .p {
   margin-bottom: 15px;
 }
-.bio {
-  margin-bottom: 20px;
-}
-.sns_wrap {
-  vertical-align: middle;
-  display: inline-block;
-  margin-right: 20px;
-  position: relative;
-  overflow: hidden;
-}
-.sns_logo {
-  display: block;
-  height: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-
-.link {
-  display: block;
-  font-size: 15px;
-  text-align: center;
-  line-height: 22px;
-  text-decoration: none;
-  color: #707070;
-}
-.link:hover {
-  color: #424242;
-  transition: all .3s;
-  box-shadow: none;
-}
 .img {
   border-radius: 10px;
   width: 100%;
@@ -493,7 +529,6 @@ th {
     padding-right: 10px;
     width: 50%;
   }
-
 
 }
 /*-----デスクトップPCとタブレット横------------------------------*/
