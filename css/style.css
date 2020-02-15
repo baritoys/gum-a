@@ -351,10 +351,11 @@ input, button, textarea, select {
   text-align: center;
 }
 .view_more {
-  display: block;
+  display: inline-block;
+  float: left;
   background-color: #ffffff;
   border-radius: 10px;
-  width: 150px;
+  padding: 0px 20px 0px 20px;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
