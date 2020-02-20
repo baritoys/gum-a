@@ -127,10 +127,9 @@ input, button, textarea, select {
   /* background-color: #FFFFFF; */
   width: 100%;
   height: 100%;
-  padding: 30px 10px 40px 10px;
+  padding: 30px 10px 30px 10px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 50px;
 }
 .article {
   max-width: 550px;
@@ -155,6 +154,9 @@ input, button, textarea, select {
   padding-left: 5px;
   padding-right: 5px;
   width: 100%;
+}
+.threecolumn_wrap {
+  overflow: hidden;
 }
 /*-----トップ-------------------------*/
 .top {
@@ -301,31 +303,18 @@ input, button, textarea, select {
 .about_logo {
   width: 150px;
 }
-.about_wrap_2 {
-  background-color: #ffffff;
-}
-.red {
-  height: 200px;
-  background-image: url("../img/works/graphic_card.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size:cover;
-}
-.blue {
-  height: 200px;
-  background-image: url("../img/works/graphic_card.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size:cover;
-}
-.yellow {
-  height: 200px;
-  background-image: url("../img/works/graphic_card.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size:cover;
-}
 
+.container_yurai {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0px 10px 30px 10px;
+}
+.yurai_p {
+  ont-size: 12px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
 /*-----メンバー-------------------------*/
 .profile_img {
   width: 150px;
@@ -391,20 +380,21 @@ input, button, textarea, select {
   margin-left: 10px;
 }
 .view_more_wrap {
-  position: absolute;
-  bottom: 0px;
+  /* position: absolute;
+  bottom: 0px; */
   width: 100%;
-  text-align: center;
+  display: block;
+  position: relative;
 }
 .view_more {
   display: inline-block;
-  float: left;
+  text-align: center;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 0px 20px 0px 20px;
   font-size: 18px;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 36px;
 }
 
 
