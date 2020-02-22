@@ -280,6 +280,9 @@ input, button, textarea, select {
 .about_wrap {
   /* background-color: #bfbfbf; */
 }
+.container_title {
+  font-weight: bold;
+}
 .container_about {
   box-sizing: border-box;
   padding: 30px 10px 30px 10px;
@@ -288,13 +291,15 @@ input, button, textarea, select {
 }
 .catchcopy{
   color: #121212;
-  margin-top: 10px;
-  font-size: 20px;
+  margin: 10px 10px 20px 10px;
+  font-size: 25px;
+  /* text-align: center; */
 }
 .about_p {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin: 10px 10px 20px 10px;
+  /* text-align: center; */
   /* font-weight: bold; */
 }
 .gum_a_color {
@@ -314,6 +319,50 @@ input, button, textarea, select {
   ont-size: 12px;
   line-height: 18px;
   margin-bottom: 20px;
+}
+.about_service_title {
+  background-color: #000000;
+  /* background-color: #FF6E6E; */
+  color: #ffffff;
+  /* color: #000000; */
+  width: 150px;
+  line-height: 27px;
+  font-size: 18px;
+  text-align: center;
+  display: inline-block;
+  margin: 25px auto 15px 10px;
+}
+.about_service_p {
+  line-height: 27px;
+  font-size: 15px;
+  margin: 0px 10px 10px 10px;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.back_gum {
+  position: absolute;
+  height: 180px;
+  z-index: -1;
+  /* opacity: 0.5; */
+}
+.border_white {
+  border: solid 5px #ffffff;
+  border-radius: 20px;
+}
+.container_wrap {
+  padding: 10px;
+}
+.img_icon {
+  height: 40px;
 }
 /*-----メンバー-------------------------*/
 .profile_img {
@@ -562,14 +611,7 @@ th {
   .main {
   }
 
-  .twocolumn {
-    display: inline-block;
-    box-sizing: border-box;
-    padding-left: 5px;
-    padding-right: 5px;
-    float: left;
-    width: 50%;
-  }
+
   .threecolumn {
     display: inline-block;
     box-sizing: border-box;
@@ -589,5 +631,13 @@ th {
     padding-left: 10px;
     padding-right: 10px;
     width: 33%;
+  }
+  .twocolumn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: left;
+    width: 50%;
   }
 }
