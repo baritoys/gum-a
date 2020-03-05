@@ -109,6 +109,9 @@ input, button, textarea, select {
   min-height: 100vh;
   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
 }
+.white_back {
+  background-color: #ffffff;
+}
 .main {
   box-sizing: border-box;
   width: 100%;
