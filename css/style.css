@@ -369,7 +369,7 @@ input, button, textarea, select {
 }
 /*-----メンバー-------------------------*/
 .profile_img {
-  width: 150px;
+  width: 230px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -377,7 +377,7 @@ input, button, textarea, select {
   margin: 0px 10px 30px 10px;
 }
 .name {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 5px;
 }
