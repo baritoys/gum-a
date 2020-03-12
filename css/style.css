@@ -309,6 +309,9 @@ input, button, textarea, select {
 .gum_a_color {
   color: #ff6e6e;
 }
+.about_name {
+  font-size: 20px;
+}
 .about_logo {
   width: 150px;
 }
