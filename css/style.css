@@ -279,6 +279,36 @@ input, button, textarea, select {
 .contact_description {
   margin-top: 10px;
 }
+/*-----お仕事の流れ-------------------------*/
+.img_flow {
+  width: 30%;
+  margin: 0 auto 0 auto;
+  border-radius: 10px;
+}
+.flow_column {
+  /* border: solid 4px #000000; */
+  border: solid 4px #ffffff;
+  /* background-color: #ffffff; */
+  padding: 20px;
+  border-radius: 10px;
+  /* text-align: center; */
+  margin-bottom: 15px;
+}
+.flow_h2 {
+  /* text-align: center; */
+  color: #121212;
+}
+.flow_h3 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  color: #121212;
+  margin: 10px 0px 10px 0px;;
+  padding: 5px;
+}
+.flow_p {
+
+}
 /*-----about-------------------------*/
 .about_wrap {
   /* background-color: #bfbfbf; */
