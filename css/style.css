@@ -280,34 +280,62 @@ input, button, textarea, select {
   margin-top: 10px;
 }
 /*-----お仕事の流れ-------------------------*/
-.img_flow {
-  width: 30%;
-  margin: 0 auto 0 auto;
-  border-radius: 10px;
-}
-.flow_column {
-  /* border: solid 4px #000000; */
-  border: solid 4px #ffffff;
+.flow_wrap {
   /* background-color: #ffffff; */
-  padding: 20px;
-  border-radius: 10px;
+  border: solid 2px #ffffff;
+  padding: 15px;
+  border-radius: 20px;
   /* text-align: center; */
   margin-bottom: 15px;
+}
+.flow_image_wrap {
+  position: relative;
+}
+.img_flow {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  border-radius: 20px;
+}
+.flow_number {
+  background-color: #ff6e6e;
+  color: #ffffff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.flow_column {
+  border: solid 2px #ececec;
+  /* border: solid 4px #ffffff; */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  /* text-align: center; */
+  margin-bottom: 15px;
+  overflow: hidden;
 }
 .flow_h2 {
   /* text-align: center; */
   color: #121212;
+  margin: 0 0 10px 10px;
 }
 .flow_h3 {
   font-size: 18px;
   line-height: 27px;
   font-weight: bold;
   color: #121212;
-  margin: 10px 0px 10px 0px;;
+  margin: 10px 0px 0px 0px;;
   padding: 5px;
 }
 .flow_p {
-
+  margin: 0px 0px 0px 0px;
+  padding: 5px;
 }
 /*-----about-------------------------*/
 .about_wrap {
@@ -657,7 +685,24 @@ th {
     padding-right: 10px;
     width: 50%;
   }
-
+  .flow_image_wrap {
+    width: 40%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .flow_p_wrap {
+    width: 60%;
+    float: left;
+    padding: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .flow_number {
+    top: 0;
+    left: auto;
+    right: 0;
+  }
 }
 /*-----デスクトップPCとタブレット横------------------------------*/
 @media (min-width: 769px){
@@ -677,4 +722,5 @@ th {
     float: left;
     width: 50%;
   }
+
 }
