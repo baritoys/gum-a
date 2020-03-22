@@ -336,6 +336,8 @@ input, button, textarea, select {
 .flow_p {
   margin: 0px 0px 0px 0px;
   padding: 5px;
+  font-size: 16px;
+  line-height: 26px;
 }
 /*-----about-------------------------*/
 .about_wrap {
